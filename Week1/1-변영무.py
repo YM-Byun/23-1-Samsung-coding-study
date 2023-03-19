@@ -7,7 +7,7 @@ def diffusion(R, C, data_map):
 
     for row in range(R):
         for col in range(C):
-            if data_map[row][col] != PURIFIER:
+            if data_map[row][col] > 0:
                 moved_dust = 0
 
                 for dr, dc in delta:
