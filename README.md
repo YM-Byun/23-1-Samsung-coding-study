@@ -16,3 +16,4 @@
 |Week|숙제1|숙제2|
 |------|---|---|
 |Week1|[미세먼지 안녕!](https://www.acmicpc.net/problem/17144)|[마법사 상어와 비바라기](https://www.acmicpc.net/problem/21610)|
+|Week2|[어른 상어](https://www.acmicpc.net/problem/19237)|[상어 중학교](https://www.acmicpc.net/problem/21609)|
