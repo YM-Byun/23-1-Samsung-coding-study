@@ -3,7 +3,6 @@ position = [] #상어의 현재 위치
 for _ in range(n):
     position.append(list(map(int,input().split())))
 
-# shark 어따 저장할지
 direction = list(map(int,input().split())) #상어의 현재 방향
 
 priorities= [] #방향 우선순위 
@@ -36,7 +35,7 @@ def shark_move():
         for y in range(n):
             if position[x][y] != 0:
                 head = direction[position[x][y]-1] # head에 현재 x,y 좌표 상어의 방향을 가져온다
-                found = False
+                found = False #상어가 이동했는지
                 for i in priorities[position[x][y]-1][head-1]: #우선순위 좌표 획득 
                     nx = x +move[i-1][0]
                     ny = y + move[i-1][1]
@@ -47,10 +46,20 @@ def shark_move():
                                 arr[nx][ny]=position[x][y]
                             else:
                                 arr[nx][ny] = min(position[x][y],arr[nx][ny])
-                                found = True
-                                break
+                            found = True
+                            break
                 if found:
                     continue
+                #주변으로 이동을 못한경우
+                for i in priorities[position[x][y]-1][head-1]:
+                    nx = x + move[i-1][0]
+                    ny = y + move[i-1][1]
+                    if 0<= nx < n and 0 <= ny < n:
+                        if smell[nx][ny][0] == position[x][y]:#자기냄새
+                            direction[position[x][y]-1]= i
+                            arr[nx][ny] = position[x][y]
+                            break
+                            
     return arr
                 
                     
