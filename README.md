@@ -17,3 +17,5 @@
 |------|---|---|
 |Week1|[미세먼지 안녕!](https://www.acmicpc.net/problem/17144)|[마법사 상어와 비바라기](https://www.acmicpc.net/problem/21610)|
 |Week2|[어른 상어](https://www.acmicpc.net/problem/19237)|[상어 중학교](https://www.acmicpc.net/problem/21609)|
+|Week2|[상어 초등학교](https://www.acmicpc.net/problem/21608)|[컨베이어벨트 위의 로봇](https://www.acmicpc.net/problem/20055)|
+|Week3|[예술성](https://www.codetree.ai/training-field/frequent-problems/artistry/description?page=3&pageSize=20&username=)||
